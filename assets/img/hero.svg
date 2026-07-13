@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b4423"/>
+      <stop offset="1" stop-color="#3d2617"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="700" fill="url(#g)"/>
+  <circle cx="800" cy="294" r="210" fill="#d9a51f" opacity="0.15"/>
+  <text x="800" y="350" font-size="196" text-anchor="middle">🏰💩</text>
+  <text x="800" y="504" font-family="Georgia, serif" font-size="52" fill="#f0c75e" text-anchor="middle" font-weight="bold">Entrée du parc</text>
+  <text x="800" y="574" font-family="Arial, sans-serif" font-size="26" fill="#e8dcc8" text-anchor="middle">Visuel en attente — hero.jpg</text>
+</svg>

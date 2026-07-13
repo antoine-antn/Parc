@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b4423"/>
+      <stop offset="1" stop-color="#3d2617"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <circle cx="400" cy="210" r="150" fill="#d9a51f" opacity="0.15"/>
+  <text x="400" y="250" font-size="140" text-anchor="middle">🛶</text>
+  <text x="400" y="360" font-family="Georgia, serif" font-size="37" fill="#f0c75e" text-anchor="middle" font-weight="bold">La Lagune Brune</text>
+  <text x="400" y="410" font-family="Arial, sans-serif" font-size="19" fill="#e8dcc8" text-anchor="middle">attraction-lagune.jpg</text>
+</svg>

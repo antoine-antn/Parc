@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b4423"/>
+      <stop offset="1" stop-color="#3d2617"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#g)"/>
+  <circle cx="450" cy="252" r="180" fill="#d9a51f" opacity="0.15"/>
+  <text x="450" y="300" font-size="168" text-anchor="middle">🏨</text>
+  <text x="450" y="432" font-family="Georgia, serif" font-size="45" fill="#f0c75e" text-anchor="middle" font-weight="bold">Hôtel « C'est joli mais ça sent mauvais »</text>
+  <text x="450" y="491" font-family="Arial, sans-serif" font-size="22" fill="#e8dcc8" text-anchor="middle">hotel.jpg</text>
+</svg>

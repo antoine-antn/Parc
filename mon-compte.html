@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Compte | Cacaland Paris — Site officiel</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💩</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/fallback.js"></script>
+</head>
+<body>
+
+  <div class="topbar">🔒 Espace personnel sécurisé — vos données sont chiffrées et légèrement parfumées</div>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="index.html">
+        <img src="assets/img/logo.png" alt="Logo Cacaland Paris">
+        <span class="brand">Cacaland<small>Paris — Marne-la-Boue</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="hotels.html">Hôtels &amp; Billets</a></li>
+        <li><a href="mon-compte.html" class="btn btn-small">Mon Compte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ÉCRAN DE CONNEXION -->
+  <div id="ecran-connexion">
+    <div class="login-wrap">
+      <h1>Mon Compte Cacaland</h1>
+      <p class="sous-titre">Connectez-vous pour accéder à vos réservations et à vos avantages fidélité « Club Cacahuète ».</p>
+      <form id="form-connexion" autocomplete="off">
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email" placeholder="votre@email.fr" required>
+        <label for="motdepasse">Mot de passe</label>
+        <input type="password" id="motdepasse" placeholder="••••••••••" required>
+        <div class="login-error" id="erreur-connexion">Identifiants incorrects. Après 3 tentatives, votre compte sera parfumé par mesure de sécurité.</div>
+        <button type="submit" class="btn">Se connecter</button>
+      </form>
+      <p class="login-secure">🔒 Connexion sécurisée SSL — Cacaland Paris ne partagera jamais vos données (personne n'en veut).</p>
+    </div>
+  </div>
+
+  <!-- ESPACE CLIENT (visible après connexion) -->
+  <div id="espace-client" class="account" style="display:none;">
+    <div class="logout-bar"><button id="btn-deconnexion">Se déconnecter</button></div>
+    <h1 class="hello" id="salutation">Bonjour !</h1>
+    <p>Bienvenue dans votre espace personnel. Vous avez <strong>1 réservation à venir</strong>.</p>
+
+    <div class="resa-card">
+      <div class="resa-head">
+        <div>
+          <span class="badge ok" style="margin:0 10px 0 0;">✔ Confirmée</span>
+          <strong>Séjour Magique 3 jours / 2 nuits</strong>
+        </div>
+        <span class="ref" id="resa-ref"></span>
+      </div>
+      <div class="resa-body">
+        <img src="assets/img/hotel.jpg" alt="Hôtel C'est joli mais ça sent mauvais">
+        <div class="resa-details">
+          <h2 id="resa-hotel"></h2>
+          <div class="stars" id="resa-etoiles"></div>
+          <div class="resa-lignes">
+            <div><b>Arrivée</b><span id="resa-arrivee"></span><br>à partir de 16h00</div>
+            <div><b>Départ</b><span id="resa-depart"></span><br>avant 9h30 (strict)</div>
+            <div><b>Chambre</b><span id="resa-chambre"></span></div>
+            <div><b>Voyageurs</b><span id="resa-voyageurs"></span></div>
+          </div>
+          <b style="color:var(--brun); font-size:.75rem; text-transform:uppercase; letter-spacing:1px;">Inclus dans votre séjour</b>
+          <ul class="options-incluses">
+            <li>Billets 3 jours — Parc Cacaland (attractions ouvertes uniquement)</li>
+            <li>Petits-déjeuners continentaux odorants pour toute la famille</li>
+            <li>Rencontre photo avec Cacahuète™ le 20 août à 9h15</li>
+            <li>Navette « Caca-Express » illimitée</li>
+            <li>1 diffuseur d'ambiance « Forêt de pins » par chambre</li>
+          </ul>
+          <div class="resa-total">
+            <div>
+              <div>Total payé le <span id="resa-date-paiement"></span></div>
+              <div style="font-size:.78rem; color:var(--texte-doux);">Réservation ferme et définitive — non annulable, non remboursable, non échangeable, non négociable.</div>
+            </div>
+            <div class="prix" id="resa-prix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notice" style="margin-bottom:60px;">
+      📌 <strong>Avant votre arrivée :</strong> pensez à imprimer votre confirmation, à prévoir des vêtements de rechange pour chaque jour et à télécharger l'application Cacaland (bientôt disponible). Un e-mail de bienvenue vous sera envoyé 48h avant votre arrivée, si notre serveur est d'humeur.
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Cacaland Paris</h4>
+        <ul>
+          <li>Route de la Station d'Épuration, D204</li>
+          <li>45990 Marne-la-Boue, France</li>
+          <li>Service client : 0 891 22 22 22 (0,80 €/min)</li>
+          <li>Ouvert de 10h30 à 17h45 (sauf lundi, mardi et jours de pluie)</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Préparer sa visite</h4>
+        <ul>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="hotels.html">Hôtels &amp; Billets</a></li>
+          <li><a href="#">Plan du parc (PDF, 48 Mo)</a></li>
+          <li><a href="#">Objets trouvés (et sentis)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Informations légales</h4>
+        <ul>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">CGV</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Charte olfactive</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Nous suivre</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Newsletter « L'Odeur du mois »</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span class="annee"></span> Cacaland Paris S.A.S. au capital de 12 €. Tous droits réservés. Cacahuète™ est une marque déposée à peu près partout.</div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/compte.js"></script>
+</body>
+</html>
